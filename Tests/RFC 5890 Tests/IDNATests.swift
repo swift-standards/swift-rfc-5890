@@ -11,6 +11,7 @@
 // ===----------------------------------------------------------------------===//
 
 import Testing
+
 @testable import RFC_5890
 
 /// Tests for IDNA2008 per RFC 5890
@@ -319,7 +320,7 @@ struct IDNATests {
             ("bücher.de", "xn--bcher-kva.de"),
             ("naïve.com", "xn--nave-6pa.com"),
             ("café.fr", "xn--caf-dma.fr"),
-            ("zürich.ch", "xn--zrich-kva.ch")
+            ("zürich.ch", "xn--zrich-kva.ch"),
         ]
 
         for (unicode, ascii) in domains {
